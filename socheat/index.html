@@ -15,30 +15,49 @@
 
     <title>Einladung</title>
     <style>
+        #text
+        {
+            opacity: 1;
+        }
         #content
         {
-            background-image: url("paper.png");
+            background: rgba(255, 255, 255, 0.6);
+        }
+        .gold
+        {
+            color: gold;
+        }
+        hr
+        {
+            width: 50% ;
+            margin:0 auto;
         }
         body
         {
-            background-image: url("rosen.jpg");
+            background-image: url("rose.avif");
         };
     </style>
 </head>
 <body id="backgroundimage">
     <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6 container text-center" id="content">
-            <h1>Socheat</h1>
-            <h3>Chorn</h3>
-            <h5>und</h5>
-            <h1>Christian</h1>
-            <h3>Ankerl</h3>
-            <p>Laden euch ein zu ihrer Rosenhochzeit</p>
-            <p>Am 1.1.1111</p>
-            <p>Im Hotel XY</p>
+        <div class="col-md-3"></div>
+        <div class="col-md-6 container text-center" id="content">
+            <div id="text">
+                <h1>Socheat</h1>
+                <h3>Chorn</h3>
+                <h2 class="gold">und</h2>
+                <h1>Christian</h1>
+                <h3>Ankerl</h3>
+                <hr>
+                <p>Laden euch ein zu ihrer</p>
+                <h1 class="gold">Rosenhochzeit</h1>
+                <hr>
+                <p>Am Samtag 1.1.1111</p>
+                <p>Im Hotel XY</p>
+            </div>
+            <div style='height:300px;width:500px;margin:0 auto;'><iframe width="500" height="300" src=https://maps.google.de/maps?hl=de&q=%20Edelsteingasse%20Wien&t=&z=14&ie=utf8&iwloc=b&output=embed frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style='height:300px;width:100%;'> Von <a href="http://economic-engineering.de/"  style="font-size:10px;" title="economic" target="_blank">economic</a></iframe><p style="text-align:right; margin:0px; padding-top:-10px; line-height:10px;font-size:10px;margin-top: -25px;"> von <a href="https://www.checkpoll.de"  style="font-size:10px;" title="checkpoll" target="_blank">checkpoll</a></p></div>
         </div>
-        <div class="col-3"></div>
+        <div class="col-md-3"></div>
     </div>
     <script>    
         $(DOMready);
