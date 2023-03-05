@@ -15,23 +15,36 @@
 
     <title>Einladung</title>
     <style>
+        #content
+        {
+            background-image: url("paper.png");
+        }
         body
         {
             background-image: url("rosen.jpg");
         };
     </style>
 </head>
-<body>
-    <div class="container text-center" id="content">
-        <h1>Einladung</h1>
-        <p>Hier kommt das Datum hin</p>
-        <p>Irgendein ewig langer text darüber wie toll Philipp ist und so</p>
+<body id="backgroundimage">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 container text-center" id="content">
+            <h1>Socheat</h1>
+            <h3>Chorn</h3>
+            <h5>und</h5>
+            <h1>Christian</h1>
+            <h3>Ankerl</h3>
+            <p>Laden euch ein zu ihrer Rosenhochzeit</p>
+            <p>Am 1.1.1111</p>
+            <p>Im Hotel XY</p>
+        </div>
+        <div class="col-3"></div>
     </div>
     <script>    
         $(DOMready);
         function DOMready(){
             $("#content").hide();
-            $("#content").slideDown();
+            $("#content").show("slow");
         }
     </script>
 </body>
